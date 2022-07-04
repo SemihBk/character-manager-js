@@ -10,7 +10,7 @@
 
 ## Language used
 
-Javascript, HTML, CSS
+Javascript, HTML, SCSS
 
 ## Contributors
 
