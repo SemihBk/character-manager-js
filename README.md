@@ -12,7 +12,7 @@
 
 Javascript, HTML, CSS
 
-## Colaborators
+## Contributors
 
 [Semih BEKKI](https://github.com/SemihBk)
 
