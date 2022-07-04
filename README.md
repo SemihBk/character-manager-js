@@ -1,6 +1,6 @@
 # Character Manager JS
 
-This is an app that will be able to view, edit, create all favorites characters.
+### This is an app that will be able to view, edit, create all favorites characters.
 
 ![Screenshot of the app](./src/img/cm.jpg)
 
