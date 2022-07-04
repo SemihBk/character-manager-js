@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("/src/img/comicbgorange.jpg");
+  background-size: cover;
+  // background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,55 @@
+#btn-edit {
+  display: block;
+  margin: auto;
+  color: #000;
+  border-radius: 8px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+
+  justify-self: flex-end;
+
+  @include border-comics-1;
+  // border-width: 3px 3px 5px 5px;
+  // border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  transition: all 0.3s;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  &:focus {
+    transform: translateY(-2px);
+  }
+}
+
+.btn-edit {
+  color: $white;
+  padding: 1rem 1rem;
+  background-color: $green;
+
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  transform: rotate(-3deg);
+
+  @include btn-edit-delete;
+}
+
+.btn-delete {
+  color: white;
+  padding: 1rem 2rem;
+  background-color: red;
+
+  position: absolute;
+  top: -10px;
+  right: 0;
+  transform: rotate(3deg);
+
+  @include btn-edit-delete;
+}

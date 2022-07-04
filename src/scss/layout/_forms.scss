@@ -1,0 +1,48 @@
+/////////////////
+// LABEL INPUT //
+/////////////////
+
+label {
+  font-size: 2rem;
+  font-family: "Lato";
+  padding-left: 1rem;
+}
+
+input {
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  display: inline-block;
+  height: 4rem;
+
+  @include border-comics-1;
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+textarea {
+  width: 100%;
+  display: inline-block;
+
+  padding: 0.5rem 1rem 0.5rem 1rem;
+
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-family: "Lato";
+  resize: none;
+
+  @include border-comics-1;
+}
+
+input[type="file"] {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+input:is(:focus) {
+  border: 2px solid blueviolet;
+  border-width: 3px 3px 5px 5px;
+}

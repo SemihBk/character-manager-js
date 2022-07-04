@@ -1,0 +1,257 @@
+///////////////////
+// OVERLAY MODAL //
+///////////////////
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 66;
+  display: none;
+
+  .modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+  }
+
+  .modal {
+    @include modal;
+
+    .close-modal {
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      background: red;
+      color: #fff;
+    }
+
+    .create-title {
+      @include modal-title;
+    }
+
+    #btn-submit {
+      display: block;
+      margin: auto;
+      color: #000;
+      border-radius: 8px;
+      border: 2px solid black;
+      background-color: white;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+
+      justify-self: flex-end;
+
+      @include border-comics-1;
+      // border-width: 3px 3px 5px 5px;
+      // border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+      transition: all 0.3s;
+
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+
+      &:focus {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+.modal-container.active {
+  display: block;
+}
+
+///////////////////////
+// MODAL DELETE CARD //
+///////////////////////
+
+.modal-delete-container {
+  @include modal-container;
+
+  .modal-delete-overlay {
+    @include modal-overlay;
+  }
+
+  .modal {
+    width: 95%;
+    max-width: 70rem;
+    min-width: 30rem;
+    padding: 8rem;
+
+    background: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include border-comics-2;
+
+    .close-modal {
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      background: red;
+      color: $white;
+    }
+
+    .delete-title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .delete-description {
+      font-size: 1.8rem;
+      margin-bottom: 5rem;
+    }
+
+    .flex-btn {
+      display: flex;
+      justify-content: center;
+      gap: 10rem;
+
+      .btn-delete-confirm {
+        display: inline-block;
+        color: $white;
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border: 2px solid black;
+        background-color: red;
+
+        @include border-comics-1;
+
+        &:hover {
+          transform: translateY(-6px) rotate(-2deg);
+        }
+      }
+
+      .btn-delete-cancel {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border: 2px solid black;
+        background-color: $white;
+
+        @include border-comics-1;
+
+        &:hover {
+          transform: translateY(-6px) rotate(2deg);
+        }
+      }
+    }
+  }
+}
+
+.modal-delete-container.active {
+  display: block;
+}
+
+/////////////////////
+// MODAL EDIT CARD //
+/////////////////////
+
+.modal-edit-container {
+  @include modal-container;
+
+  .modal-edit-overlay {
+    @include modal-overlay;
+  }
+
+  .modal {
+    @include modal;
+
+    .close-modal {
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      background: red;
+      color: $white;
+    }
+
+    .edit-title {
+      @include modal-title;
+    }
+
+    .img-input {
+      display: flex;
+      align-items: center;
+    }
+
+    .flex-btn {
+      display: flex;
+      justify-content: center;
+      gap: 10rem;
+
+      .btn-delete-confirm {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border: 2px solid black;
+        background-color: red;
+
+        @include border-comics-1;
+
+        &:hover {
+          transform: translateY(-6px) rotate(-2deg);
+        }
+      }
+
+      .btn-delete-cancel {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border: 2px solid black;
+        background-color: $white;
+
+        @include border-comics-1;
+
+        &:hover {
+          transform: translateY(-6px) rotate(2deg);
+        }
+      }
+    }
+  }
+}
+
+.modal-edit-container.active {
+  display: block;
+}
+
+.edit-img {
+  border-radius: 100%;
+  width: 10rem;
+  height: 10rem;
+  border: 4px solid #000;
+}
