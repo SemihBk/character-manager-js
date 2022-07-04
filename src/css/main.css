@@ -100,6 +100,7 @@ body {
 .overlay {
   padding-bottom: 8rem;
   position: relative;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 .overlay .flex {
@@ -125,6 +126,7 @@ body {
   font-family: "Dekko";
   border: 5px solid black;
   transition: all 0.3s;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 .overlay .flex .card:hover {
@@ -521,6 +523,10 @@ input:is(:focus) {
   border: 4px solid #000;
 }
 
+#img_prev {
+  width: 80px;
+}
+
 .modal-card-container {
   position: fixed;
   top: 0;
@@ -576,7 +582,7 @@ input:is(:focus) {
   align-items: center;
   font-family: "Dekko";
   padding: 2rem;
-  background-image: url("/src/img/bgcardblue.jpg");
+  background-image: url("../../src/img/bgcardblue.jpg");
   background-size: cover;
   box-shadow: -18px 16px 0px 5px #000000;
   border: 5px solid black;

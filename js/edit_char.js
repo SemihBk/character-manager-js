@@ -146,6 +146,7 @@ function edit_char() {
               console.log("ready to submit");
               isFilesReady2 = true;
               console.log(myFiles2);
+              document.getElementById("edit_image").src = "data:image/*;base64," + (myFiles2['picture']);
             })
             .catch((error) => {
               console.log(error);

@@ -97,6 +97,7 @@ function create_char() {
         console.log("ready to submit");
         isFilesReady = true;
         console.log(myFiles);
+        document.getElementById("img_prev").src = "data:image/*;base64," + (myFiles['picture']);
       })
       .catch((error) => {
         console.log(error);
@@ -128,4 +129,10 @@ function create_char() {
         console.log(error);
       });
   }
+}
+
+
+const img_preview = document.getElementById("img_prev");
+if(document.getElementById("img_prev").src == "") {
+  img_preview.body.style.display = none;
 }
