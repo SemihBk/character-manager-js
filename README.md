@@ -15,4 +15,5 @@ Javascript, HTML, CSS
 ## Colaborators
 
 [Semih](https://github.com/SemihBk)
+
 [Duc](https://github.com/luuduc34)
