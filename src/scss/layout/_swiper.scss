@@ -2,7 +2,6 @@
 // SECTION SWIPER
 /////////////////
 .overlay {
-  // padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
   cursor: grab;
@@ -19,30 +18,25 @@
       margin-left: 8rem;
 
       @include border-comics-2;
-      // border-width: 5px 3px 3px 5px;
-      // border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
 
       box-shadow: -18px 16px 0px 5px #000000;
       transform: rotate(-2deg);
 
       display: flex;
       flex-direction: column;
-      // justify-content: space-around;
       align-items: center;
 
       padding: 2rem;
-      background-image: url("/src/img/bgcardblue.jpg");
+      background-image: url("../../src/img/bgcardblue.jpg");
       background-size: cover;
 
       font-family: "Dekko";
       border: 5px solid black;
-      // border-radius: 12px;
 
       transition: all 0.3s;
       cursor: grab;
 
       &:hover {
-        //        transform: translateY(-30px) rotate(-3deg);
         transform: scale(1.2) rotate(-2deg);
       }
 
@@ -75,7 +69,6 @@
           text-align: center;
           color: rgb(0, 0, 0);
           margin-bottom: 1.2rem;
-          // text-shadow: -1px 0 1px #000;
         }
 
         .description {
@@ -86,7 +79,6 @@
           color: black;
           overflow-y: auto;
           display: none;
-          // text-shadow: -1px 0 1px #000;
         }
 
         .id-num {
@@ -94,8 +86,6 @@
         }
 
         .btn-lm {
-          // cursor: pointer;
-
           color: #000;
           text-decoration: none;
           border-radius: 8px;
@@ -109,8 +99,6 @@
           justify-self: flex-end;
 
           @include border-comics-1;
-          // border-width: 3px 3px 5px 5px;
-          // border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
           transition: all 0.3s;
           cursor: pointer;
 

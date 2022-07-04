@@ -10,13 +10,13 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url("/src/img/comicbgorange.jpg");
+  background-image: url("../../src/img/comicbgorange.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .header-banner {
-  background-image: url("/src/img/marvel_banner.png");
+  background-image: url("../../src/img/marvel_banner.png");
   background-size: cover;
   height: 14rem;
   box-shadow: 1px 5px 3px #000000;
@@ -120,7 +120,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-image: url("/src/img/bgcardblue.jpg");
+  background-image: url("../../src/img/bgcardblue.jpg");
   background-size: cover;
   font-family: "Dekko";
   border: 5px solid black;
@@ -481,7 +481,7 @@ input:is(:focus) {
 }
 .modal-edit-container .modal .flex-btn .btn-delete-confirm {
   display: inline-block;
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 1.5rem 3rem;
   font-size: 1.6rem;

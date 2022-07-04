@@ -52,8 +52,7 @@
       justify-self: flex-end;
 
       @include border-comics-1;
-      // border-width: 3px 3px 5px 5px;
-      // border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+
       transition: all 0.3s;
 
       cursor: pointer;
@@ -210,7 +209,7 @@
 
       .btn-delete-confirm {
         display: inline-block;
-        color: white;
+        color: $white;
         text-decoration: none;
         padding: 1.5rem 3rem;
         font-size: 1.6rem;
